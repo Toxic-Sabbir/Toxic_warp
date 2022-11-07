@@ -3,11 +3,15 @@ import json
 import datetime
 import random
 import string
+import shutil
 import time
 import os
 import sys
+columns = shutil.get_terminal_size().columns
 os.system("title WARP-PLUS-CLOUDFLARE By Sabbir")
-os.system('cls' if os.name == 'nt' else 'clear')
+#Logo
+def logo():
+    os.system("clear")
     print("\33[94m┌────────────────────────────────────────┐".center(columns+5))
     print("\33[94m│            \33[92m▞▀▖▞▀▖▛▀▖▛▀▖▜▘▛▀▖ \33[94m          │".center(columns+15))
     print("\33[94m│            \33[92m▚▄ ▙▄▌▙▄▘▙▄▘▐ ▙▄▘ \33[94m          │".center(columns+15))
@@ -15,10 +19,15 @@ os.system('cls' if os.name == 'nt' else 'clear')
     print("\33[94m│            \33[92m▝▀ ▘ ▘▀▀ ▀▀ ▀▘▘ ▘ \33[94m          │".center(columns+15))
     print("\33[94m│                              \33[94m          │".center(columns+9))
     print("\33[94m│ \33[95mAuthor : ToxicSabbir                   \33[94m│".center(columns+15))
-    print("│ \33[95mTool   : Hack With Link                \33[94m│".center(columns+9))
+    print("│ \33[95mTool   : Hack 1111 warp                \33[94m│".center(columns+9))
     print("│ \33[95mGitHub : http://gitub.com/Toxic-Sabbir \33[94m│".center(columns+9))
     print("│ \33[95mCoder  : S4B81R                        \33[94m│".center(columns+9))
     print("\33[94m└────────────────────────────────────────┘".center(columns+5))
+
+
+
+
+
 
 print ("[+] ABOUT SCRIPT:")
 print ("[-] With this script, you can getting unlimited GB on Warp+.")
