@@ -1,2 +1,97 @@
-import marshal,zlib,base64
-exec(zlib.decompress(base64("aW1wb3J0IHVybGxpYi5yZXF1ZXN0CmltcG9ydCBqc29uCmltcG9ydCBkYXRldGltZQppbXBvcnQgcmFuZG9tCmltcG9ydCBzdHJpbmcKaW1wb3J0IHRpbWUKaW1wb3J0IG9zCmltcG9ydCBzeXMKb3Muc3lzdGVtKCJ0aXRsZSBXQVJQLVBMVVMtQ0xPVURGTEFSRSBCeSBTYWJiaXIiKQpvcy5zeXN0ZW0oJ2NscycgaWYgb3MubmFtZSA9PSAnbnQnIGVsc2UgJ2NsZWFyJykKICAgIHByaW50KCJcMzNbOTRt4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQIi5jZW50ZXIoY29sdW1ucys1KSkKICAgIHByaW50KCJcMzNbOTRt4pSCICAgICAgICAgICAgXDMzWzkybeKWnuKWgOKWluKWnuKWgOKWluKWm+KWgOKWluKWm+KWgOKWluKWnOKWmOKWm+KWgOKWliBcMzNbOTRtICAgICAgICAgIOKUgiIuY2VudGVyKGNvbHVtbnMrMTUpKQogICAgcHJpbnQoIlwzM1s5NG3ilIIgICAgICAgICAgICBcMzNbOTJt4paa4paEIOKWmeKWhOKWjOKWmeKWhOKWmOKWmeKWhOKWmOKWkCDilpniloTilpggXDMzWzk0bSAgICAgICAgICDilIIiLmNlbnRlcihjb2x1bW5zKzE1KSkKICAgIHByaW50KCJcMzNbOTRt4pSCICAgICAgICAgICAgXDMzWzkybeKWliDilozilowg4paM4paMIOKWjOKWjCDilozilpAg4paM4paaICBcMzNbOTRtICAgICAgICAgIOKUgiIuY2VudGVyKGNvbHVtbnMrMTUpKQogICAgcHJpbnQoIlwzM1s5NG3ilIIgICAgICAgICAgICBcMzNbOTJt4pad4paAIOKWmCDilpjiloDiloAg4paA4paAIOKWgOKWmOKWmCDilpggXDMzWzk0bSAgICAgICAgICDilIIiLmNlbnRlcihjb2x1bW5zKzE1KSkKICAgIHByaW50KCJcMzNbOTRt4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXDMzWzk0bSAgICAgICAgICDilIIiLmNlbnRlcihjb2x1bW5zKzkpKQogICAgcHJpbnQoIlwzM1s5NG3ilIIgXDMzWzk1bUF1dGhvciA6IFRveGljU2FiYmlyICAgICAgICAgICAgICAgICAgIFwzM1s5NG3ilIIiLmNlbnRlcihjb2x1bW5zKzE1KSkKICAgIHByaW50KCLilIIgXDMzWzk1bVRvb2wgICA6IEhhY2sgV2l0aCBMaW5rICAgICAgICAgICAgICAgIFwzM1s5NG3ilIIiLmNlbnRlcihjb2x1bW5zKzkpKQogICAgcHJpbnQoIuKUgiBcMzNbOTVtR2l0SHViIDogaHR0cDovL2dpdHViLmNvbS9Ub3hpYy1TYWJiaXIgXDMzWzk0beKUgiIuY2VudGVyKGNvbHVtbnMrOSkpCiAgICBwcmludCgi4pSCIFwzM1s5NW1Db2RlciAgOiBTNEI4MVIgICAgICAgICAgICAgICAgICAgICAgICBcMzNbOTRt4pSCIi5jZW50ZXIoY29sdW1ucys5KSkKICAgIHByaW50KCJcMzNbOTRt4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYIi5jZW50ZXIoY29sdW1ucys1KSkKCnByaW50ICgiWytdIEFCT1VUIFNDUklQVDoiKQpwcmludCAoIlstXSBXaXRoIHRoaXMgc2NyaXB0LCB5b3UgY2FuIGdldHRpbmcgdW5saW1pdGVkIEdCIG9uIFdhcnArLiIpCnByaW50ICgiWy1dIFZlcnNpb246IDQuMC4wIikKcHJpbnQgKCItLS0tLS0tLSIpCnByaW50ICgiWytdIFRISVMgU0NSSVBUIENPRERFRCBCWSBBTElJTEFQUk8iKSAKcHJpbnQgKCJbLV0gICAgIEZCOiBmYi5jb20vc2FiYmlyLnBzeWNobyIpIApwcmludCAoIlstXSBURUxFR1JBTTogU2FiYmlyIikKcHJpbnQgKCItLS0tLS0tLSIpCnJlZmVycmVyID0gaW5wdXQoIlsjXSBFbnRlciB0aGUgV0FSUCsgSUQ6IikKZGVmIGdlblN0cmluZyhzdHJpbmdMZW5ndGgpOgoJdHJ5OgoJCWxldHRlcnMgPSBzdHJpbmcuYXNjaWlfbGV0dGVycyArIHN0cmluZy5kaWdpdHMKCQlyZXR1cm4gJycuam9pbihyYW5kb20uY2hvaWNlKGxldHRlcnMpIGZvciBpIGluIHJhbmdlKHN0cmluZ0xlbmd0aCkpCglleGNlcHQgRXhjZXB0aW9uIGFzIGVycm9yOgoJCXByaW50KGVycm9yKQkJICAgIApkZWYgZGlnaXRTdHJpbmcoc3RyaW5nTGVuZ3RoKToKCXRyeToKCQlkaWdpdCA9IHN0cmluZy5kaWdpdHMKCQlyZXR1cm4gJycuam9pbigocmFuZG9tLmNob2ljZShkaWdpdCkgZm9yIGkgaW4gcmFuZ2Uoc3RyaW5nTGVuZ3RoKSkpICAgIAoJZXhjZXB0IEV4Y2VwdGlvbiBhcyBlcnJvcjoKCQlwcmludChlcnJvcikJCnVybCA9IGYnaHR0cHM6Ly9hcGkuY2xvdWRmbGFyZWNsaWVudC5jb20vdjBhe2RpZ2l0U3RyaW5nKDMpfS9yZWcnCmRlZiBydW4oKToKCXRyeToKCQlpbnN0YWxsX2lkID0gZ2VuU3RyaW5nKDIyKQoJCWJvZHkgPSB7ImtleSI6ICJ7fT0iLmZvcm1hdChnZW5TdHJpbmcoNDMpKSwKCQkJCSJpbnN0YWxsX2lkIjogaW5zdGFsbF9pZCwKCQkJCSJmY21fdG9rZW4iOiAie306QVBBOTFie30iLmZvcm1hdChpbnN0YWxsX2lkLCBnZW5TdHJpbmcoMTM0KSksCgkJCQkicmVmZXJyZXIiOiByZWZlcnJlciwKCQkJCSJ3YXJwX2VuYWJsZWQiOiBGYWxzZSwKCQkJCSJ0b3MiOiBkYXRldGltZS5kYXRldGltZS5ub3coKS5pc29mb3JtYXQoKVs6LTNdICsgIiswMjowMCIsCgkJCQkidHlwZSI6ICJBbmRyb2lkIiwKCQkJCSJsb2NhbGUiOiAiZXNfRVMifQoJCWRhdGEgPSBqc29uLmR1bXBzKGJvZHkpLmVuY29kZSgndXRmOCcpCgkJaGVhZGVycyA9IHsnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9VVRGLTgnLAoJCQkJCSdIb3N0JzogJ2FwaS5jbG91ZGZsYXJlY2xpZW50LmNvbScsCgkJCQkJJ0Nvbm5lY3Rpb24nOiAnS2VlcC1BbGl2ZScsCgkJCQkJJ0FjY2VwdC1FbmNvZGluZyc6ICdnemlwJywKCQkJCQknVXNlci1BZ2VudCc6ICdva2h0dHAvMy4xMi4xJwoJCQkJCX0KCQlyZXEgICAgICAgICA9IHVybGxpYi5yZXF1ZXN0LlJlcXVlc3QodXJsLCBkYXRhLCBoZWFkZXJzKQoJCXJlc3BvbnNlICAgID0gdXJsbGliLnJlcXVlc3QudXJsb3BlbihyZXEpCgkJc3RhdHVzX2NvZGUgPSByZXNwb25zZS5nZXRjb2RlKCkJCgkJcmV0dXJuIHN0YXR1c19jb2RlCglleGNlcHQgRXhjZXB0aW9uIGFzIGVycm9yOgoJCXByaW50KGVycm9yKQkKCmcgPSAwCmIgPSAwCndoaWxlIFRydWU6CglyZXN1bHQgPSBydW4oKQoJaWYgcmVzdWx0ID09IDIwMDoKCQlnID0gZyArIDEKCQlvcy5zeXN0ZW0oJ2NscycgaWYgb3MubmFtZSA9PSAnbnQnIGVsc2UgJ2NsZWFyJykKCQlwcmludCgiIikKCQlwcmludCgiICAgICAgICAgICAgICAgICAgV0FSUC1QTFVTLUNMT1VERkxBUkUgKHNjcmlwdCkiICsgIiBCeSBTYWJiaXIiKQoJCXByaW50KCIiKQoJCWFuaW1hdGlvbiA9IFsiW+KWoOKWoeKWoeKWoeKWoeKWoeKWoeKWoeKWoeKWoV0gMTAlIiwiW+KWoOKWoOKWoeKWoeKWoeKWoeKWoeKWoeKWoeKWoV0gMjAlIiwgIlvilqDilqDilqDilqHilqHilqHilqHilqHilqHilqFdIDMwJSIsICJb4pag4pag4pag4pag4pah4pah4pah4pah4pah4pahXSA0MCUiLCAiW+KWoOKWoOKWoOKWoOKWoOKWoeKWoeKWoeKWoeKWoV0gNTAlIiwgIlvilqDilqDilqDilqDilqDilqDilqHilqHilqHilqFdIDYwJSIsICJb4pag4pag4pag4pag4pag4pag4pag4pah4pah4pahXSA3MCUiLCAiW+KWoOKWoOKWoOKWoOKWoOKWoOKWoOKWoOKWoeKWoV0gODAlIiwgIlvilqDilqDilqDilqDilqDilqDilqDilqDilqDilqFdIDkwJSIsICJb4pag4pag4pag4pag4pag4pag4pag4pag4pag4pagXSAxMDAlIl0gCgkJZm9yIGkgaW4gcmFuZ2UobGVuKGFuaW1hdGlvbikpOgoJCQl0aW1lLnNsZWVwKDAuNSkKCQkJc3lzLnN0ZG91dC53cml0ZSgiXHJbK10gUHJlcGFyaW5nLi4uICIgKyBhbmltYXRpb25baSAlIGxlbihhbmltYXRpb24pXSkKCQkJc3lzLnN0ZG91dC5mbHVzaCgpCgkJcHJpbnQoZiJcblstXSBXT1JLIE9OIElEOiB7cmVmZXJyZXJ9IikgICAgCgkJcHJpbnQoZiJbOildIHtnfSBHQiBoYXMgYmVlbiBzdWNjZXNzZnVsbHkgYWRkZWQgdG8geW91ciBhY2NvdW50LiIpCgkJcHJpbnQoZiJbI10gVG90YWw6IHtnfSBHb29kIHtifSBCYWQiKQoJCXByaW50KCJbKl0gQWZ0ZXIgMTggc2Vjb25kcywgYSBuZXcgcmVxdWVzdCB3aWxsIGJlIHNlbnQuIikKCQl0aW1lLnNsZWVwKDE4KQoJZWxzZToKCQliID0gYiArIDEKCQlvcy5zeXN0ZW0oJ2NscycgaWYgb3MubmFtZSA9PSAnbnQnIGVsc2UgJ2NsZWFyJykKCQlwcmludCgiIikKCQlwcmludCgiICAgICAgICAgICAgICAgICAgV0FSUC1QTFVTLUNMT1VERkxBUkUgKHNjcmlwdCkiICsgIiBCeSBTYWJiaXIiKQoJCXByaW50KCIiKQoJCXByaW50KCJbOihdIEVycm9yIHdoZW4gY29ubmVjdGluZyB0byBzZXJ2ZXIuIikKCQlwcmludChmIlsjXSBUb3RhbDoge2d9IEdvb2Qge2J9IEJhZCIp")))
+import urllib.request
+import json
+import datetime
+import random
+import string
+import time
+import os
+import sys
+os.system("title WARP-PLUS-CLOUDFLARE By Sabbir")
+os.system('cls' if os.name == 'nt' else 'clear')
+    print("\33[94m┌────────────────────────────────────────┐".center(columns+5))
+    print("\33[94m│            \33[92m▞▀▖▞▀▖▛▀▖▛▀▖▜▘▛▀▖ \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▚▄ ▙▄▌▙▄▘▙▄▘▐ ▙▄▘ \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▖ ▌▌ ▌▌ ▌▌ ▌▐ ▌▚  \33[94m          │".center(columns+15))
+    print("\33[94m│            \33[92m▝▀ ▘ ▘▀▀ ▀▀ ▀▘▘ ▘ \33[94m          │".center(columns+15))
+    print("\33[94m│                              \33[94m          │".center(columns+9))
+    print("\33[94m│ \33[95mAuthor : ToxicSabbir                   \33[94m│".center(columns+15))
+    print("│ \33[95mTool   : Hack With Link                \33[94m│".center(columns+9))
+    print("│ \33[95mGitHub : http://gitub.com/Toxic-Sabbir \33[94m│".center(columns+9))
+    print("│ \33[95mCoder  : S4B81R                        \33[94m│".center(columns+9))
+    print("\33[94m└────────────────────────────────────────┘".center(columns+5))
+
+print ("[+] ABOUT SCRIPT:")
+print ("[-] With this script, you can getting unlimited GB on Warp+.")
+print ("[-] Version: 4.0.0")
+print ("--------")
+print ("[+] THIS SCRIPT CODDED BY ALIILAPRO") 
+print ("[-]     FB: fb.com/sabbir.psycho") 
+print ("[-] TELEGRAM: Sabbir")
+print ("--------")
+referrer = input("[#] Enter the WARP+ ID:")
+def genString(stringLength):
+	try:
+		letters = string.ascii_letters + string.digits
+		return ''.join(random.choice(letters) for i in range(stringLength))
+	except Exception as error:
+		print(error)		    
+def digitString(stringLength):
+	try:
+		digit = string.digits
+		return ''.join((random.choice(digit) for i in range(stringLength)))    
+	except Exception as error:
+		print(error)	
+url = f'https://api.cloudflareclient.com/v0a{digitString(3)}/reg'
+def run():
+	try:
+		install_id = genString(22)
+		body = {"key": "{}=".format(genString(43)),
+				"install_id": install_id,
+				"fcm_token": "{}:APA91b{}".format(install_id, genString(134)),
+				"referrer": referrer,
+				"warp_enabled": False,
+				"tos": datetime.datetime.now().isoformat()[:-3] + "+02:00",
+				"type": "Android",
+				"locale": "es_ES"}
+		data = json.dumps(body).encode('utf8')
+		headers = {'Content-Type': 'application/json; charset=UTF-8',
+					'Host': 'api.cloudflareclient.com',
+					'Connection': 'Keep-Alive',
+					'Accept-Encoding': 'gzip',
+					'User-Agent': 'okhttp/3.12.1'
+					}
+		req         = urllib.request.Request(url, data, headers)
+		response    = urllib.request.urlopen(req)
+		status_code = response.getcode()	
+		return status_code
+	except Exception as error:
+		print(error)	
+
+g = 0
+b = 0
+while True:
+	result = run()
+	if result == 200:
+		g = g + 1
+		os.system('cls' if os.name == 'nt' else 'clear')
+		print("")
+		print("                  WARP-PLUS-CLOUDFLARE (script)" + " By Sabbir")
+		print("")
+		animation = ["[■□□□□□□□□□] 10%","[■■□□□□□□□□] 20%", "[■■■□□□□□□□] 30%", "[■■■■□□□□□□] 40%", "[■■■■■□□□□□] 50%", "[■■■■■■□□□□] 60%", "[■■■■■■■□□□] 70%", "[■■■■■■■■□□] 80%", "[■■■■■■■■■□] 90%", "[■■■■■■■■■■] 100%"] 
+		for i in range(len(animation)):
+			time.sleep(0.5)
+			sys.stdout.write("\r[+] Preparing... " + animation[i % len(animation)])
+			sys.stdout.flush()
+		print(f"\n[-] WORK ON ID: {referrer}")    
+		print(f"[:)] {g} GB has been successfully added to your account.")
+		print(f"[#] Total: {g} Good {b} Bad")
+		print("[*] After 18 seconds, a new request will be sent.")
+		time.sleep(18)
+	else:
+		b = b + 1
+		os.system('cls' if os.name == 'nt' else 'clear')
+		print("")
+		print("                  WARP-PLUS-CLOUDFLARE (script)" + " By Sabbir")
+		print("")
+		print("[:(] Error when connecting to server.")
+		print(f"[#] Total: {g} Good {b} Bad")
