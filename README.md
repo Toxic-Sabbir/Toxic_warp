@@ -38,8 +38,6 @@ Note: (This Tools Are Free, So You No Need Permission To Use Sabbir Toxic_warp T
 ```
 pkg update ; pkg upgrade ; pkg install python ; pkg install python2 ; pip install requests ; pip install mechanize; pip install bs4, pkg install git ; git clone https://github.com/Toxic_warp/get_warp.py ; cd Toxic_warp; python get_warp.py
 
-Note: (This Tools Are Free, So You No Need Permission To Use Sabbir Toxic_warp Tools Enjoy)
-
 ```
 
 [![Facebook](https://img.shields.io/badge/Facebook-Mr.NIKI-blue?style=flat-square&logo=facebook)](https://www.facebook.com/sabbir.psycho)</br>
